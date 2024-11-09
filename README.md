@@ -8,5 +8,5 @@ Repository for projects and TP
   - [Calcul des coûts](./AWS_intro_TP/TP2.md)
 
 - [AWS TP](./AWS_TP)
-  - [Load Balancer EC2](./AWS_TP/TP1_Load_balancer_instances_EC2/TP01-lb-ec2.md)
-  - [Peering 2 VPCs](./AWS_TP/TP2_Peering_2_VCPS/TP02-vcp-peering.md)
+  - [Load Balancer EC2](./AWS_TP/TP1_Load_balancer_instances_EC2/TP1_loadbalancer_ec2.md)
+  - [Peering 2 VPCs](./AWS_TP/TP2_Peering_2_VCPS/TP2_vcp_peering.md)
