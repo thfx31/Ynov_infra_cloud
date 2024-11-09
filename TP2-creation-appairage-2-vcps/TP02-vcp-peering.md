@@ -20,7 +20,7 @@
     - [Mise à jour tables de routage](#mise-à-jour-tables-de-routage)
     - [Modification Security Group](#modification-security-group)
     - [Validation connectivité vers IBI-Instance2](#validation-connectivité-vers-ibi-instance2)
-
+- [Ressources](#ressources)
 ---
 
 &nbsp;
@@ -287,3 +287,10 @@ services/
 
 [ec2-user@ip-10-7-2-42 ~]$ 
 ```
+
+&nbsp;
+
+## Ressources
+
+- SSH EC2 private subnet : https://cloudqubes.com/tutorial/how-to-ssh-into-ec2-in-private-subnet/
+- Peering : https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html
