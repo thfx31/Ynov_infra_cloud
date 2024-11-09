@@ -35,7 +35,7 @@
 
 Créer un TargetGroup 'TFX_TargetGroup"
 
-![TargetGroup](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/01-create_targetgroup.png)
+![TargetGroup](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/01-create_targetgroup.png?raw=true)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ Créer le LB TFX_LeadBalancer qui utilise le TargetGroup crée précédement
 > EC2 > Load Balancing > Load Balancer > Create Load Balancer
 
 
-![LoadBalancer](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP1-Load_balancer_instances_EC2/images/02-create_lb.png?raw=true)
+![LoadBalancer](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/02-create_lb.png?raw=true)
 
 &nbsp;
 
@@ -55,12 +55,12 @@ Créer le securityGroup pour le loadbalancer
 
 > EC2 > Network & Security > Security Group > Create Security Group 
 
-![SecurityGroup-LB](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP1-Load_balancer_instances_EC2/images/03-create_securitygroup1.png?raw=true)
+![SecurityGroup-LB](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/03-create_securitygroup1.png?raw=true)
 
 
 Modifier le SecurityGroup pour le loadbalancer
 
-![Edit-LB-SG](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP1-Load_balancer_instances_EC2/images/04-SG_for_lb.png?raw=true)
+![Edit-LB-SG](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/04-SG_for_lb.png?raw=true)
 
 &nbsp;
 
@@ -72,7 +72,7 @@ Modifier le SecurityGroup pour le loadbalancer
 > EC2 > Instances > Instances > Launch Instances 
 
 
-![Create-Webserver](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP1-Load_balancer_instances_EC2/images/05-create-ec2-webserver-instance.png?raw=true)
+![Create-Webserver](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/05-create-ec2-webserver-instance.png?raw=true)
 
 
 ### Configuration du serveur
@@ -164,7 +164,7 @@ Rendre exécutable le script, le lancer et vérifier son bon fonctionnement
 
 > EC2 > Instances > Instances > Actions > Image and templates > Create image 
 
-![Create-Webserver-AMI](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/07-create%20webserver-ami.png)
+![Create-Webserver-AMI](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/07-create%20webserver-ami.png)
 
 &nbsp;
 
@@ -176,7 +176,7 @@ L'ajouter l'instance créée précédemment à ce Security Group.
 
 > EC2 > Security Groups > Create security group
 
-![Create-SG-EC2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/08-create-securitygroup-ec2-1.png)
+![Create-SG-EC2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/08-create-securitygroup-ec2-1.png)
 
 ### Créer une instance EC2 TFX_Instance1
 L'instance va utiliser le Security Group“TFX_SecurityGroup_EC2” et l’AMI créée précédemment.
@@ -184,13 +184,13 @@ L'instance va utiliser le Security Group“TFX_SecurityGroup_EC2” et l’AMI c
 > EC2 > Instances > Instances > Launch Instances 
 
 
-![Create-TFX_Instance1-1](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/09-create-tfx-instance1-1.png)
+![Create-TFX_Instance1-1](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/09-create-tfx-instance1-1.png)
 
-![Create-TFX_Instance1-2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/09-create-tfx-instance1-2.png)
+![Create-TFX_Instance1-2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/09-create-tfx-instance1-2.png)
 
 ### Test du load balancer avec TFX_instance1 
 
-![Create-TFX_Instance1-2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/10-test-lb-tfx-instance1.png)
+![Create-TFX_Instance1-2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/10-test-lb-tfx-instance1.png)
 
 &nbsp;
 
@@ -208,10 +208,10 @@ thomas@Mint:~$ sudo ./aws/install
 
 ### Création d’une clé de sécurité pour AWS CLI
 
-![AWSCLI-1](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/13-awcli-key-1.png)
+![AWSCLI-1](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/13-awcli-key-1.png)
 
 
-![AWSCLI-2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/14-awcli-key-2.png)
+![AWSCLI-2](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/14-awcli-key-2.png)
 
 
 ### Créer une nouvelle instance EC2 avec AWS CLI
@@ -274,10 +274,10 @@ thomas@Mint:~$ aws elbv2 register-targets --target-group-arn arn:aws:elasticload
 
 > EC2 > Target groups > TFX-TargetGroup
 
-![TargetGroup](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/11-check-targetgroup.png)
+![TargetGroup](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/11-check-targetgroup.png)
 
 &nbsp;
 
 ### Vérifier que le LB switch bien sur l'autre instance
 
-![Check-LB](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/TP1-Load_balancer_instances_EC2/images/12-test-lb-tfx-instance2.png)
+![Check-LB](https://raw.githubusercontent.com/thfx31/Ynov_infra_cloud/refs/heads/main/AWS_TP/TP1_Load_balancer_instances_EC2/images/12-test-lb-tfx-instance2.png)

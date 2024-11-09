@@ -29,7 +29,7 @@
 ### VPC
 > VPC > Virtual Private Cloud > Your VPCs > Create VPC
 
-![CreateVPC](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/01-create-VPC-TFX-VPC1.png?raw=true)
+![CreateVPC](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/01-create-VPC-TFX-VPC1.png?raw=true)
 
 ***Note : En choisissant l'option **VPC and more**, on pourrait créer automatiquement toutes les ressources liées au VPC.
 J'ai choisi VPC only afin de tester la création manuelle de celles ci.***
@@ -43,15 +43,15 @@ Création des réseaux permettant de segmenter les ressources du VPC
 
 > VPC > Subnets > Create subnet
 
-![CreateSubnet](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/02-create-subnet-1.png?raw=true)
+![CreateSubnet](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/02-create-subnet-1.png?raw=true)
 
 **Public subnet**
 
-![CreateSubnet](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/02-create-subnet-2.png?raw=true)
+![CreateSubnet](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/02-create-subnet-2.png?raw=true)
 
 **Private subnet**
 
-![CreateSubnet](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/02-create-subnet-3.png?raw=true)
+![CreateSubnet](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/02-create-subnet-3.png?raw=true)
 
 &nbsp;
 
@@ -62,11 +62,11 @@ L'**Internet Gateway** permet aux instances du sous-réseau public d'accéder à
 
 Créer l'Internet Gateway
 
-![Create IG1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/03-create-internet-gw-1.png?raw=true)
+![Create IG1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/03-create-internet-gw-1.png?raw=true)
 
 L'attacher au VPC 
 
-![Create IG2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/03-create-internet-gw-2.png?raw=true)
+![Create IG2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/03-create-internet-gw-2.png?raw=true)
 
 &nbsp;
 
@@ -75,7 +75,7 @@ La **NAT Gateway** permet aux instances du sous-réseau privé d'accéder à int
 
 > VPC > NAT gateways > Create NAT gateway
 
-![Create NG](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/05-create-nat-gw.png?raw=true)
+![Create NG](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/05-create-nat-gw.png?raw=true)
 
 &nbsp;
 
@@ -93,29 +93,29 @@ Création des tables de routages :
 
 Création table de routage et choix du VPC
 
-![Create RT-Public1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/04-create-rt-public-1.png?raw=true)
+![Create RT-Public1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/04-create-rt-public-1.png?raw=true)
 
 Création de la route de base
 
-![Create RT-Public2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/04-create-rt-public-2.png?raw=true)
+![Create RT-Public2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/04-create-rt-public-2.png?raw=true)
 
 On l'associe au subnet public
 
-![Create RT-Public3](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/04-create-rt-public-3.png?raw=true)
+![Create RT-Public3](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/04-create-rt-public-3.png?raw=true)
 
 **Private RT**
 
 Création table de routage et choix du VPC
 
-![Create RT-Private](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/06-create-rt-private-1.png?raw=true)
+![Create RT-Private](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/06-create-rt-private-1.png?raw=true)
 
 Création de la route de base
 
-![Create RT-Private](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/06-create-rt-private-2.png?raw=true)
+![Create RT-Private](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/06-create-rt-private-2.png?raw=true)
 
 On l'associe au subnet privé
 
-![Create RT-Private](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/06-create-rt-private-3.png?raw=true)
+![Create RT-Private](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/06-create-rt-private-3.png?raw=true)
 
 &nbsp;
 
@@ -128,11 +128,11 @@ Créer une instance TFX-instance1, l'ajouter au VPC, la positionner sur le sous 
 
 AMI Amazon Linux 2 (image custom importée depuis une autre région)
 
-![CreateInstance1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/07-create-tfx-instance1-1.png?raw=true)
+![CreateInstance1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/07-create-tfx-instance1-1.png?raw=true)
 
 Paramétrages réseaux
 
-![CreateInstance1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/07-create-tfx-instance1-2.png?raw=true)
+![CreateInstance1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/07-create-tfx-instance1-2.png?raw=true)
 
 &nbsp;
 
@@ -143,15 +143,15 @@ Créer une instance TFX-BastionVCP1 et l'ajouter au VPC (l'association au securi
 
 AMI Amazon Linux 2 
 
-![CreateBastion1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/07-create-tfx-instance1-1.png?raw=true)
+![CreateBastion1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/07-create-tfx-instance1-1.png?raw=true)
 
 Paramètres réseaux
 
-![CreateBastion2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/07-create-tfx-instance1-2.png?raw=true)
+![CreateBastion2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/07-create-tfx-instance1-2.png?raw=true)
 
 Security Group
 
-![CreateSGBastion1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/09-create-sg-bastion.png?raw=true)
+![CreateSGBastion1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/09-create-sg-bastion.png?raw=true)
 
 &nbsp;
 
@@ -219,29 +219,29 @@ L'objectif est maintenant de lier ces deux VPC afin de valider l'interconnexion 
 
 Requête d'appairage
 
-![CreatePeering1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/10-create-peering-1.png?raw=true)
+![CreatePeering1](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/10-create-peering-1.png?raw=true)
 
 Validation d'appairage
 
-![CreatePeering2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/10-create-peering-2.png?raw=true)
+![CreatePeering2](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/10-create-peering-2.png?raw=true)
 
 &nbsp;
 
 ### Mise à jour tables de routage
 Ajout du subnet VPC2 pour la connexion du peering
 
-![EditRT](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/11-edit-vpc-routes.png?raw=true)
+![EditRT](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/11-edit-vpc-routes.png?raw=true)
 
 Status des routes
 
-![EditRT](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/12-add-route-for-vcp2.png?raw=true)
+![EditRT](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/12-add-route-for-vcp2.png?raw=true)
 
 &nbsp;
 
 ### Modification Security Group
 Ajout d'une règle "Allow from VCP2" pour autoriser le traffic de VCP2.
 
-![SGRule](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/13-add-inbound-rules-for-vcp2.png?raw=true)
+![SGRule](https://github.com/thfx31/Ynov_infra_cloud/blob/main/AWS_TP/TP2_Peering_2_VCPS/images/13-add-inbound-rules-for-vcp2.png?raw=true)
 
 &nbsp;
 
