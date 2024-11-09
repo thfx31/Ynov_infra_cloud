@@ -294,3 +294,4 @@ services/
 
 - SSH EC2 private subnet : https://cloudqubes.com/tutorial/how-to-ssh-into-ec2-in-private-subnet/
 - Peering : https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html
+- Peering : https://eunishap.medium.com/how-to-create-peering-connections-between-aws-virtual-private-clouds-vpcs-1e0d524cc503
