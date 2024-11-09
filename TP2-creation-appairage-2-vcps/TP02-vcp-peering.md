@@ -23,14 +23,16 @@
 
 ---
 
+&nbsp;
+
 ## Création des VPCs
 ### VPC
 > VPC > Virtual Private Cloud > Your VPCs > Create VPC
 
 ![CreateVPC](https://github.com/thfx31/Ynov_infra_cloud/blob/main/TP2-creation-appairage-2-vcps/images/01-create-VPC-TFX-VPC1.png?raw=true)
 
-***Note : En choisissant l'option VPC and more, on pourrait créer automatiquement toutes les ressources liées au VPC.
-J'ai choisi VPN only afin de tester la création manuelle de celles ci.***
+***Note : En choisissant l'option **VPC and more**, on pourrait créer automatiquement toutes les ressources liées au VPC.
+J'ai choisi VPC only afin de tester la création manuelle de celles ci.***
 
 &nbsp;
 
@@ -135,7 +137,7 @@ Paramétrages réseaux
 &nbsp;
 
 ### TFX-BastionVCP1
-Créer une instance TFX-BastionVCP1 et l'ajouter au VPC (l'association au securitygroup dédié à été géré manuellement par la suite)
+Créer une instance TFX-BastionVCP1 et l'ajouter au VPC (l'association au securitygroup dédié a été gérée manuellement par la suite)
 
 > EC2 > Instances > Launch Instances
 
@@ -154,7 +156,7 @@ Security Group
 &nbsp;
 
 ### Validation connexion instance
-L'objectif est de se connecter à l'instance TFX-Instance1 depuis ma machine linux via un rebond avec TFX-BastionVCP1.
+L'objectif est de se connecter à l'instance TFX-Instance1 depuis ma machine Linux via un rebond avec TFX-BastionVCP1.
 On utilisera les clés générées lors de la création de l'instance et du bastion
 
 ```shell
