@@ -10,3 +10,5 @@ Repository for projects and TP
 - [AWS TP](./AWS_TP)
   - [Load Balancer EC2](./AWS_TP/TP1_Load_balancer_instances_EC2/TP1_loadbalancer_ec2.md)
   - [Peering 2 VPCs](./AWS_TP/TP2_Peering_2_VCPS/TP2_vcp_peering.md)
+
+- [TERRAFORM TP](./Terraform_TP)
